@@ -1,5 +1,5 @@
 theme: jekyll-theme-slate
 title: HardStart.io
 description: Ideas, thoughts, and working notes in progress.
-permalink: /:title
+permalink: /:title/
   
