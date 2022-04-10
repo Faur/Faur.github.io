@@ -9,4 +9,4 @@ permalink:  /hello-world/
 
 # Hello World
 
-Hi, hello.
+Hi, hello. Bonjour!
