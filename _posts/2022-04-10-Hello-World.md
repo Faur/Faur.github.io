@@ -1,9 +1,10 @@
 ---
-layout: post
-title: "Hello World"
-date: 2022-04-10
+theme:      jekyll-theme-slate
 categories: post
-permalink: /hello-world/
+layout:     post
+title:      "Hello World"
+date:       2022-04-10
+permalink:  /hello-world/
 ---
 
 # Hello World
