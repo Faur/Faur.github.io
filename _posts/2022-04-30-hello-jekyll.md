@@ -4,7 +4,7 @@ mathjax: True
 
 title:      "Hello Jekyll!"
 permalink:  "hello_jekyll"  # Ensure the link doesn't change
-date:       0001-01-01 # Post date # If permalink isn't set
+date:       2022-05-04 # Post date # If permalink isn't set
 excerpt:    "Simple demonstration of Jekyll and how I setup my blog."
 ---
 > {{ page.excerpt }}
