@@ -2,62 +2,47 @@
 layout: post
 mathjax: True
 
-title:      "Hello Jekyll!"
-permalink:  "hello-jekyll"      # Ensure the link doesn't change
-date:       2022-05-04          # Post date
-excerpt:    "Simple demonstration of Jekyll and how I setup my blog."
+title:      "Blog: Templates!"
+permalink:  "blog-templates"      # Ensure the link doesn't change
+date:       2025-01-04          # Most recent date
+excerpt:    "Living document with basic Jekyll templates."
 ---
 
 > {{ page.excerpt }}
 <!-- SHOULD BE IN THE TOP OF EACH POST-->
 <!-- TODO: put this into the headder -->
 
-This blog post (unlike the rest) is a living document that I use to write examples and templates for myself.
-
-## <a name="intro"/> Why Jekyll
-
-This is my blog. It uses [Jekyll](http://jekyllrb.com/) and almost entirely copies the setup of [Andrej Karpathy's blog](https://github.com/karpathy/karpathy.github.io), which it self is very close to the vanilla Jekyll setup. I.e. don't expect anything fancy.
-
-I chose Jekyll because it is light weight (to use and load), I can reasonably understand what is going on, and once setup it is very quick to write posts using markdown and basic HTML.
-
-### Todos
-
-* Update header and footer.
-
-
-
-## Folder and file structure
-
-Posts are in files on the format: `/_posts/YYYY-MM-DD-NAME-OF-POST.md`. This date is the date that work on the post began.
-Assests should be in a folder: `/assets/NAME-OF-POST/`
-
-Attributes
-
-* `permalink` should be set to `NAME-OF-POST`, same as in the file name.
-* `date` variable should be set to the (first) publish date.
-
-
-
-### Local compiling and serving
-
-`cd` to the appropriate folder.
-
-Build the site and make it available on a local server.
-
-    bundle exec jekyll serve
-
-Then browse to: 
-
-    http://localhost:4000/
-
-<!--### Updating a post -->
-
 ## Writing and formatting posts
 
 ### Text Formatting
-Jekyll supports basic formatting such as _italic_ and **bold**. And remember ~~the world is flat.~~
-Subscript not supported: H~2~O, and superscript not supported: X^2^.
-Emoji's also not supported :joy:
+Jekyll supports basic formatting such as
+*  _italic_ 
+* **bold**
+* ~~Strikethrough~~
+
+Jekyll doesn't support
+1. Subscript: H~2~O
+1. Superscript: X^2^
+1. Emojis: :joy:
+
+#### Math Formatting
+Inline math is made with `\\(` `\\)` like this:
+\\(\nabla_{W} \log p(y=UP \mid x)  \frac{1}{2} \\)
+its strange.
+
+is not made wiht $, it 
+
+Fancy math is made with `$$` and supports `align` environments like this:
+$$
+\begin{align}
+\nabla_{\theta} E_x[f(x)] &= \nabla_{\theta} \sum_x p(x) f(x) & \text{definition of expectation} \\
+& = \sum_x \nabla_{\theta} p(x) f(x) & \text{swap sum and gradient} \\
+& = \sum_x p(x) \frac{\nabla_{\theta} p(x)}{p(x)} f(x) & \text{both multiply and divide by } p(x) \\
+& = \sum_x p(x) \nabla_{\theta} \log p(x) f(x) & \text{use the fact that } \nabla_{\theta} \log(z) = \frac{1}{z} \nabla_{\theta} z \\
+& = E_x[f(x) \nabla_{\theta} \log p(x) ] & \text{definition of expectation}
+\end{align}
+$$
+
 
 ### Images
 <!-- EMBED 1x IMAGE -->
@@ -149,21 +134,6 @@ I like to put the output of code in a separate code block inside a block quote, 
 
 You can also make codeblocks by indenting with 4 spaces, but then you don't get syntax highlighing.
 
-### Math Formatting
-Inline math is not made wiht $, it is made with `\\(` `\\)` like this:
-\\(\nabla_{W} \log p(y=UP \mid x)  \frac{1}{2} \\)
-its strange.
-
-Fancy math is made with `$$` and supports `align` environments like this:
-$$
-\begin{align}
-\nabla_{\theta} E_x[f(x)] &= \nabla_{\theta} \sum_x p(x) f(x) & \text{definition of expectation} \\
-& = \sum_x \nabla_{\theta} p(x) f(x) & \text{swap sum and gradient} \\
-& = \sum_x p(x) \frac{\nabla_{\theta} p(x)}{p(x)} f(x) & \text{both multiply and divide by } p(x) \\
-& = \sum_x p(x) \nabla_{\theta} \log p(x) f(x) & \text{use the fact that } \nabla_{\theta} \log(z) = \frac{1}{z} \nabla_{\theta} z \\
-& = E_x[f(x) \nabla_{\theta} \log p(x) ] & \text{definition of expectation}
-\end{align}
-$$
 
 
 ### Lists

@@ -24,7 +24,7 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 # Performance-booster for watching directories on Windows
-gem "wdm", ">= 0.1.1" if Gem.win_platform?
+## gem "wdm", ">= 0.1.1" if Gem.win_platform? # FAUR REMOVED
 
 # Fix: 'require' bundle exec jekyll serve: cannot load such file
 # https://stackoverflow.com/questions/65989040/bundle-exec-jekyll-serve-cannot-load-such-file
