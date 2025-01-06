@@ -8,8 +8,13 @@ title:      "If you fall off the horse, get on a new one"
 permalink:  "fall-off-the-horse"  # Ensure the link doesn't change
 #date:       2022-05-04 # Post date # If permalink isn't set
 excerpt:    "
-...
+xxx
 "
+excerpt:    "
+Safe predictions and an emphasis on correctness lead to XXX.
+Better to be wrong but strong.
+"
+
 ---
 > {{ page.excerpt }} 
 
@@ -68,4 +73,10 @@ In many cases it is.
 But not always.
 Sometimes the opposite is better.
 
+
+<!-- TODO: Put this in the footer -->
+<!-- END EACH POST WITH THIS -->
+<br><br>
+
+___
 
