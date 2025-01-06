@@ -4,7 +4,7 @@ mathjax: True
 
 title:      "Blog: Templates!"
 permalink:  "blog-templates"      # Ensure the link doesn't change
-date:       2025-01-04          # Most recent date
+date:       1900-01-02          # Most recent date
 excerpt:    "Living document with basic Jekyll templates."
 ---
 
